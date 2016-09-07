@@ -28,10 +28,10 @@
 		<script src="js/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
-<!--Navigation Bar-->
+		<!--Navigation Bar-->
 		<header role="banner" id="fh5co-header">
 			<div class="container">
-			    <nav class="navbar navbar-default">
+			  	<nav class="navbar navbar-default">
 		        	<div class="navbar-header">
 		        		<!-- Mobile Toggle Menu Button -->
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
@@ -48,214 +48,212 @@
 		           			<li><a href="#" data-nav-section="contactus"><span>Contact Us</span></a></li>
 		          		</ul>
 		        	</div>
-			    </nav>
+			   	</nav>
 		    </div>
 		</header>
-<!--End Navigation Bar-->
+		<!--End Navigation Bar-->
 
-	<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
 
-	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
-	<link rel="stylesheet" id="theme-switch" href="css/style.css">
-	<!-- End demo purposes only -->
+	<!-- Translate PopUp -->
+		<style>
+			#colour-variations {
+				padding: 10px;
+				-webkit-transition: 0.5s;
+	  			-o-transition: 0.5s;
+	  			transition: 0.5s;
+				width: 200px;
+				position: fixed;
+				left: 0;
+				top: 100px;
+				z-index: 999999;
+				background: #fff;
+				/*border-radius: 4px;*/
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+			}
+			#colour-variations.sleep {
+				margin-left: -200px;
+			}
+			#colour-variations h3 {
+				text-align: center;;
+				font-size: 11px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				color: #777;
+				margin: 0 0 10px 0;
+				padding: 0;;
+			}
+			#colour-variations ul,
+			#colour-variations ul li {
+				padding: 0;
+				margin: 0;
+			}
+			#colour-variations li {
+				list-style: none;
+				display: inline;
+			}
+			#colour-variations li a {
+				width: 20px;
+				height: 20px;
+				position: relative;
+				float: left;
+				margin: 5px;
+			}
+			.option-toggle {
+				position: absolute;
+				right: 0;
+				top: 0;
+				margin-top: 5px;
+				margin-right: -30px;
+				width: 30px;
+				height: 30px;
+				background: #99E368;
+				text-align: center;
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				color: #fff;
+				cursor: pointer;
+				-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+			}
+			.option-toggle i {
+				top: 2px;
+				position: relative;
+			}
+			.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+				color:  #fff;
+				text-decoration: none;
+				outline: none;
+			}
+		</style>
+		<!-- End Translate PopUp-->
 
-
-	<style>
-	/* For demo purpose only */
-	
-	/* For Demo Purposes Only ( You can delete this anytime :-) */
-	#colour-variations {
-		padding: 10px;
-		-webkit-transition: 0.5s;
-	  	-o-transition: 0.5s;
-	  	transition: 0.5s;
-		width: 200px;
-		position: fixed;
-		left: 0;
-		top: 100px;
-		z-index: 999999;
-		background: #fff;
-		/*border-radius: 4px;*/
-		border-top-right-radius: 4px;
-		border-bottom-right-radius: 4px;
-		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	}
-	#colour-variations.sleep {
-		margin-left: -200px;
-	}
-	#colour-variations h3 {
-		text-align: center;;
-		font-size: 11px;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		color: #777;
-		margin: 0 0 10px 0;
-		padding: 0;;
-	}
-	#colour-variations ul,
-	#colour-variations ul li {
-		padding: 0;
-		margin: 0;
-	}
-	#colour-variations li {
-		list-style: none;
-		display: inline;
-	}
-	#colour-variations li a {
-		width: 20px;
-		height: 20px;
-		position: relative;
-		float: left;
-		margin: 5px;
-	}
-	.option-toggle {
-		position: absolute;
-		right: 0;
-		top: 0;
-		margin-top: 5px;
-		margin-right: -30px;
-		width: 30px;
-		height: 30px;
-		background: #99E368;
-		text-align: center;
-		border-top-right-radius: 4px;
-		border-bottom-right-radius: 4px;
-		color: #fff;
-		cursor: pointer;
-		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	}
-	.option-toggle i {
-		top: 2px;
-		position: relative;
-	}
-	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
-		color:  #fff;
-		text-decoration: none;
-		outline: none;
-	}
-	</style>
-	<!-- End demo purposes only -->
-
-	<div id="slider" data-section="home">
-		<div class="owl-carousel owl-carousel-fullwidth">
-			<!-- You may change the background color here. -->
-		    <div class="item" style= "background-image:url(images/spiravita-banner1.JPG)">
-		    	
-		    	<div class="container" style="position: relative;">
-		    		<div class="row">
-					    <div class="col-md-7 text-center col-sm-7 text-center">
-			    			<div class="fh5co-owl-text-wrap" >
-						    	<div class="fh5co-owl-text" style= "padding: 250px">
-						    		<h1 class="fh5co-lead to-animate" style= "font-size: 900%">Spiravita </h1>
-									<h2 class="fh5co-sub-lead to-animate">By Stetix</h3>
-									<p class="to-animate-2"><a href="#" data-nav-section="spiravita" class="btn btn-primary btn-lg">Learn More</a></p>
+		<!-- Banner -->
+		<div id="slider" data-section="home">
+			<div class="owl-carousel owl-carousel-fullwidth">
+				<!-- Langing Image -->
+		  	  	<div class="item" style= "background-image:url(images/spiravita-banner1.JPG)">
+		    		<div class="container" style="position: relative;">
+		    			<div class="row">
+					   		<div class="col-md-7 text-center col-sm-7 text-center">
+			    				<div class="fh5co-owl-text-wrap" >
+						    		<div class="fh5co-owl-text" style= "padding: 250px">
+						    			<h1 class="fh5co-lead to-animate" style= "font-size: 900%">Spiravita </h1>
+										<h2 class="fh5co-sub-lead to-animate">By Stetix</h3>
+										<p class="to-animate-2"><a href="#" data-nav-section="spiravita" class="btn btn-primary btn-lg">Learn More</a></p>
+						    		</div>
 						    	</div>
-						    </div>
-					    </div>
-		    		</div>
-		    	</div>
-		    </div>
-			<!-- You may change the background color here.  -->
-			<div class="item" style= "background-image:url(images/LandingImage.jpeg)">
-		    	<div class="overlay"></div>
-		    	<div class="container" style="position: relative;">
-		    		<div class="row">
-					    <div class="col-md-7 text-center col-md-push-4 col-sm-7 col-sm-push-4">
-			    			<div class="fh5co-owl-text-wrap">
-						    	<div class="fh5co-owl-text">
-						    		<h1 class="fh5co-lead to-animate">Spiravita Starter Kits</h1>
-									<h2 class="fh5co-sub-lead to-animate">Read to start improving the nutrition value of your food in a fresh and healthy way? Our new starter kit make it easier than ever to start growing algae in your own home. With a tank, nutrition mix and powdered algae you have everything you need to start growing your own spirulina algae.</h3>
-									<p class="to-animate-2"><a href="#" data-nav-section="pricing" class="btn btn-primary btn-lg">Buy yours Now</a></p>
-						    	</div>
-						    </div>
-					    </div>
-					    <div class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 iphone-image">
-					    	<div class="iphone to-animate-2"><img src="images/Model.gif" alt="Free HTML5 Template by FREEHTML5.co"></div>
-					    </div>
-		    		</div>
-		    	</div>
-		    </div>
-
-		    <div class="item" style="background-image:url(images/food-banner.jpg)">
-		    	<div class="overlay"></div>
-		    	<div class="container" style="position: relative;">
-		    		<div class="row">
-		    			<div class="col-md-8 col-md-offset-2 text-center">
-		    				<div class="fh5co-owl-text-wrap">
-						    	<div class="fh5co-owl-text">
-		    						<h1 class="fh5co-lead to-animate">Check Out Our Recipes</h1>
-									<h2 class="fh5co-sub-lead to-animate">Although you may want to incoperate spirulina into your everyday diet, you may not want to consume raw spirulina. Stetix has provided you with some quick, simple and nutrious recipes to some of the most delicious everyday foods.</a></h3>
-									<p class="to-animate-2"><a href="#" data-nav-section="recipe" target="_blank" class="btn btn-primary btn-lg">View More</a></p>
-									
-								</div>
-							</div>
+					    	</div>
 		    			</div>
 		    		</div>
 		    	</div>
-		    </div>
+		    	<!-- Second Image  -->
+				<div class="item" style= "background-image:url(images/LandingImage.jpeg)">
+		    		<div class="overlay">
+		    		</div>
+		    		<div class="container" style="position: relative;">
+		    			<div class="row">
+						    <div class="col-md-7 text-center col-md-push-4 col-sm-7 col-sm-push-4">
+			    				<div class="fh5co-owl-text-wrap">
+						    		<div class="fh5co-owl-text">
+						    			<h1 class="fh5co-lead to-animate">Spiravita Starter Kits</h1>
+										<h2 class="fh5co-sub-lead to-animate">Read to start improving the nutrition value of your food in a fresh and healthy way? Our new starter kit make it easier than ever to start growing algae in your own home. With a tank, nutrition mix and powdered algae you have everything you need to start growing your own spirulina algae.</h3>
+										<p class="to-animate-2"><a href="#" data-nav-section="pricing" class="btn btn-primary btn-lg">Buy yours Now</a></p>
+						    		</div>
+						    	</div>
+					    	</div>
+					   		 <div class="col-md-4 col-md-pull-7 col-sm-4 col-sm-pull-7 iphone-image">
+					    	<div class="iphone to-animate-2"><img src="images/Model.gif" alt="Free HTML5 Template by FREEHTML5.co"></div>
+					    	</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<!-- Third Image -->
+		    	<div class="item" style="background-image:url(images/food-banner.jpg)">
+		    		<div class="overlay">
+		    		</div>
+		    		<div class="container" style="position: relative;">
+		    			<div class="row">
+		    				<div class="col-md-8 col-md-offset-2 text-center">
+		    					<div class="fh5co-owl-text-wrap">
+						    		<div class="fh5co-owl-text">
+		    							<h1 class="fh5co-lead to-animate">Check Out Our Recipes</h1>
+										<h2 class="fh5co-sub-lead to-animate">Although you may want to incoperate spirulina into your everyday diet, you may not want to consume raw spirulina. Stetix has provided you with some quick, simple and nutrious recipes to some of the most delicious everyday foods.</a></h3>
+										<p class="to-animate-2"><a href="#" data-nav-section="recipe" target="_blank" class="btn btn-primary btn-lg">View More</a></p>
+									</div>
+								</div>
+		    				</div>
+		    			</div>
+		    		</div>
+		   		</div>
+			</div>
 		</div>
-	</div>
-	<!-- Services -->
-	<div id="fh5co-our-services" data-section="spiravita">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Features</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 to-animate" style ="padding-bottom:50px">
-							<h3>Spiravita is a specially designed container in which spirulina algae can grow safely and abundantly. Spiravita’s tank is aesthetically pleasing and a stylish fit in any home. The product is 30 cm in diameter and 60 cm in height.</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-3">
-							<div class="box to-animate">
-								<div class="icon colored-6"><span><img src= "images/wheat.png" style ="width:60%"></span></div>
-								<h3>Harvesting System</h3>
-								<p>Automatic micro mesh  algae harvesting system.</p>
-							</div>
-							<div class="box to-animate">
-								<div class="icon colored-5"><span><img src= "images/beaker.png" style ="width:80%"></span></div>
-								<h3>pH Sensor</h3>
-								<p>Indicates the optimal pH for the growth of spirulina.</p>
-							</div>
-							<div class="box to-animate">
-								<div class="icon colored-4"><span><img src= "images/thermometer.png" style ="width:70%"></span></div>
-								<h3>Thermostat</h3>
-								<p>Controls the temperature of the tank.</p>
+		<!-- End Banner -->
+
+		<!-- Services "About Spirivita" -->
+		<div id="fh5co-our-services" data-section="spiravita">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">Features</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 to-animate" style ="padding-bottom:50px">
+								<h3>Spiravita is a specially designed container in which spirulina algae can grow safely and abundantly. Spiravita’s tank is aesthetically pleasing and a stylish fit in any home. The product is 30 cm in diameter and 60 cm in height.</h3>
 							</div>
 						</div>
-						<div class = "col-md-6 to-animate">
-							<img src ="images/spiravita.png" style ="width:70%">
-						</div>
-						<div class="col-md-3">
-							<div class="box to-animate">
-								<div class="icon colored-3"><span><img src= "images/lightbulb.png" style ="width:70%"></span></div>
-								<h3>Automatic LED Light</h3>
-								<p>Produces the optimal day/night cycle for spirulina.</p>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="box to-animate">
+									<div class="icon colored-6"><span><img src= "images/wheat.png" style ="width:60%" alt="Wheat"></span></div>
+									<h3>Harvesting System</h3>
+									<p>Automatic micro mesh  algae harvesting system.</p>
+								</div>
+								<div class="box to-animate">
+									<div class="icon colored-5"><span><img src= "images/beaker.png" style ="width:80%" alt="Beaker"></span>
+									</div>
+									<h3>pH Sensor</h3>
+									<p>Indicates the optimal pH for the growth of spirulina.</p>
+								</div>
+								<div class="box to-animate">
+									<div class="icon colored-4"><span><img src= "images/thermometer.png" style ="width:70%" alt="Thermometer"></span>
+									</div>
+									<h3>Thermostat</h3>
+									<p>Controls the temperature of the tank.</p>
+								</div>
 							</div>
-							<div class="box to-animate">
-								<div class="icon colored-1"><span><img src= "images/filter.png" style ="width:60%"></span></div>
-								<h3>Carbon Filter</h3>
-								<p>Filters out heavy metals from the tank's water. </p>
+							<div class = "col-md-6 to-animate">
+								<img src ="images/spiravita.png" style ="width:70%" alt="Spiravita">
 							</div>
-							<div class="box to-animate">
-								<div class="icon colored-2"><span><img src= "images/bubbles.png" style ="width:70%"></span></div>
-								<h3>Bubbler</h3>
-								<p>Supplies air and helps Balance pH in tank.</p>
+							<div class="col-md-3">
+								<div class="box to-animate">
+									<div class="icon colored-3"><span><img src= "images/lightbulb.png" style ="width:70%" alt="Light Bulb"></span></div>
+									<h3>Automatic LED Light</h3>
+									<p>Produces the optimal day/night cycle for spirulina.</p>
+								</div>
+								<div class="box to-animate">
+									<div class="icon colored-1"><span><img src= "images/filter.png" style ="width:60%"></span></div>
+									<h3>Carbon Filter</h3>
+									<p>Filters out heavy metals from the tank's water. </p>
+								</div>
+								<div class="box to-animate">
+									<div class="icon colored-2"><span><img src= "images/bubbles.png" style ="width:70%" alt="Bubbles"></span></div>
+									<h3>Bubbler</h3>
+									<p>Supplies air and helps Balance pH in tank.</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="row">
+			<div class="container">
+				<div class="row">
 				<div class="col-md-12 section-heading text-center">
 					<h2 class="to-animate">Why Spiravita?</h2>
 				</div>
@@ -263,71 +261,77 @@
 			<div class="row">
 				<div class ="col-md-12" style = "padding-bottom:50px">
 					<div style="text-align:center">
-					  <button class = "btn btn-primary" onclick="playPause()">Play/Pause</button>
-					  <button class = "btn btn-primary" onclick="makeBig()">Big</button>
-					  <button class = "btn btn-primary" onclick="makeSmall()">Small</button>
-					  <button class = "btn btn-primary" onclick="makeNormal()">Normal</button>
-					  <br><br>
-					  <video class ="to-animate"id="video1" width="600">
+						<button class = "btn btn-primary" onclick="playPause()">Play/Pause</button>
+					    <button class = "btn btn-primary" onclick="makeBig()">Big</button>
+					    <button class = "btn btn-primary" onclick="makeSmall()">Small</button>
+					    <button class = "btn btn-primary" onclick="makeNormal()">Normal</button>
+					    <br><br>
+					    <video class ="to-animate"id="video1" width="600">
 						    <source src="video.mp4" type="video/mp4">
 						    <source src="video.ogg" type="video/ogg">
 						    Your browser does not support HTML5 video.
-					  </video>
+					    </video>
 					</div>
 					<!--JS for videoplayer-->
 					<script>
-					var myVideo = document.getElementById("video1");
-					function playPause() {
-					    if (myVideo.paused)
-					        myVideo.play();
-					    else
-					        myVideo.pause();
-					}
-					function makeBig() {
-					    myVideo.width = 900;
-					}
-					function makeSmall() {
-					    myVideo.width = 300;
-					}
-					function makeNormal() {
-					    myVideo.width = 600;
-					}
+						var myVideo = document.getElementById("video1");
+						function playPause() {
+					    	if (myVideo.paused)
+					        	myVideo.play();
+					   		 else
+					        	myVideo.pause();
+						}
+						function makeBig() {
+					   	    myVideo.width = 900;
+						}
+						function makeSmall() {
+					    	myVideo.width = 300;
+						}
+						function makeNormal() {
+					    	myVideo.width = 600;
+						}
 					</script>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="box to-animate" style ="min-height:450px">
-						<div class="icon colored-1"><span><i class="icon-mustache"></i></span></div>
+						<div class="icon colored-1"><span><i class="icon-mustache"></i></span>
+						</div>
 						<h3>Fun</h3>
 						<p>Our algae tanks are a great way to have fun learning about food. You get the satisfaction of growing your own food without a high level of commitment. Spirulina is a hearty algae that will grow with little attention, so it's perfect for kids to experience and enjoy the fun of eating homegrown food. </p>
 					</div>
 					<div class="box to-animate"  style ="min-height:450px">
-						<div class="icon colored-4"><span><i class="icon-heart"></i></span></div>
+						<div class="icon colored-4"><span><i class="icon-heart"></i></span>
+						</div>
 						<h3>Good for you</h3>
 						<p>Spirulina is a superfood that's been consumed since the time of the Aztecs for its nutritional value. Spirulina contains significant amounts of calcium, niacin, potassium, magnesium, B vitamins and iron. Wildly enough, Spirulina is also an incredible source of protein. Which makes up 70% of spirulina's weight. </p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="box to-animate"  style ="min-height:450px">
-						<div class="icon colored-2"><span><i class="icon-screen-desktop"></i></span></div>
+						<div class="icon colored-2"><span><i class="icon-screen-desktop"></i></span>
+						</div>
 						<h3>Interactive</h3>
 						<p>Not sure how to use your algae? We're have you covered, here on our website we have recipes for everything from smoothies to curries which you can mix your spirulina into. We have even more innovative ideas on our pinterest and other social media platforms, so we can help you grow and enjoy your spirulina algae.</p>
 					</div>
 					<div class="box to-animate"  style ="min-height:450px">
-						<div class="icon colored-5"><span><i class="icon-rocket"></i></span></div>
+						<div class="icon colored-5"><span><i class="icon-rocket"></i></span>
+						</div>
 						<h3>Ships Canada Wide</h3>
 						<p>Our product is especially important in rural areas where fresh nutritious foods are hard to come by. Spirulina can be mixed in to everyday foods like mac & cheese or pasta with no effect on taste, making it perfect for places where boxed foods are really the only option. We've made sure that our product can get to these places by making shipping Canada wide.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="box to-animate"  style ="min-height:450px">
-						<div class="icon colored-3"><span><i class="icon-eye"></i></span></div>
+						<div class="icon colored-3"><span><i class="icon-eye"></i></span>
+						</div>
 						<h3>Aesthetic value</h3>
 						<p>The Spiravita algae tank is a fashionable piece of decor in any house. Minimal yet sophisticated, Stetix does not sacrifice beauty for functionality.</p>
 					</div>
 					<div class="box to-animate"  style ="min-height:450px">
-						<div class="icon colored-6"><span><i class="icon-user"></i></span></div>
+						<div class="icon colored-6"><span><i class="icon-user"></i></span>
+						</div>
 						<h3>Get involved</h3>
 						<p>Growing you're own food is an exceptional way to learn about it. People who grow healthy foods are much more likely to eat healthier because they know what they are eating and understand the benefits of eating healthy better. Spirivita is a great way to start your food journey. </p>
 					</div>
@@ -383,480 +387,493 @@
 				</div>
 			</div>
 		</div>
-	</div>
+		<!-- End Services -->
 
-	<!-- About Us -->
-	<div id="fh5co-about-us" data-section="about">
-		<div class="container">
-			<div class="row row-bottom-padded-lg" id="about-us">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">About Us</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 to-animate">
-							<h3>Stetix is a Canadian based company that is passionate about improving food security in Canada. Our company sells specially designed containers in which spirulina algae can grow safely and abundantly. By providing high quality, safe, and healthy spirulina to isolated communities and urban areas, we will bring Canadians closer to the goal of achieving food security.</h3>
+		<!-- About Us -->
+		<div id="fh5co-about-us" data-section="about">
+			<div class="container">
+				<div class="row row-bottom-padded-lg" id="about-us">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">About Us</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 to-animate">
+								<h3>Stetix is a Canadian based company that is passionate about improving food security in Canada. Our company sells specially designed containers in which spirulina algae can grow safely and abundantly. By providing high quality, safe, and healthy spirulina to isolated communities and urban areas, we will bring Canadians closer to the goal of achieving food security.</h3>
+							</div>
 						</div>
 					</div>
+					<div class="col-md-8 to-animate">
+						<img src="images/StetixTeam.jpg" class="img-responsive img-rounded" alt="Stetix Team">
+					</div>
+					<div class="col-md-4 to-animate">
+						<h2>How we got started</h2>
+						<p>Stetix is a new, student run company created when a group of eleven high school students, 15 to 17 years of age, that recognized the growing problem of food insecurity in Canada. After extensive research about the problem, it was concluded that the main components of the problem stemmed from a lack of nutrition, accessibility, and affordability.</p>
+						<p>For this reason, Stetix has created Spiravita, a product that is a unique and feasible solution to solving food insecurity. Spiravita is a specially designed tank placed in the homes of consumers that will allow them to safely grow spirulina algae. This algae is an excellent source of nutrition that is easy to grow, and provides consumers with an efficient way of eating healthy. </p>
+						<p><a href="aboutus.html" class="btn btn-primary">Meet the team</a></p>
+					</div>
 				</div>
-				<div class="col-md-8 to-animate">
-					<img src="images/StetixTeam.jpg" class="img-responsive img-rounded" alt="Free HTML5 Template">
-				</div>
-				<div class="col-md-4 to-animate">
-					<h2>How we got started</h2>
-					<p>Stetix is a new, student run company created when a group of eleven high school students, 15 to 17 years of age, that recognized the growing problem of food insecurity in Canada. After extensive research about the problem, it was concluded that the main components of the problem stemmed from a lack of nutrition, accessibility, and affordability.</p>
-					<p>For this reason, Stetix has created Spiravita, a product that is a unique and feasible solution to solving food insecurity. Spiravita is a specially designed tank placed in the homes of consumers that will allow them to safely grow spirulina algae. This algae is an excellent source of nutrition that is easy to grow, and provides consumers with an efficient way of eating healthy. </p>
-					<p><a href="aboutus.html" class="btn btn-primary">Meet the team</a></p>
-				</div>
-			</div>
+			</div>	
 		</div>	
-	</div>	
-<!-- Pricing -->
-	<div id="fh5co-pricing" data-section="pricing">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="single-animate animate-pricing-1">Pricing</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
-							<h3>At Stetix, you're able to purchase all of our amazing products: the starter kits help you take off on your algae growing journey; nutrition mixes, cleaning mixes and spores. In addition our products ship all across Canada. We will also offer warranty policies.</h3>
+		<!-- End About Us -->
+
+		<!-- Pricing -->
+		<div id="fh5co-pricing" data-section="pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="single-animate animate-pricing-1">Pricing</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
+								<h3>At Stetix, you're able to purchase all of our amazing products: the starter kits help you take off on your algae growing journey; nutrition mixes, cleaning mixes and spores. In addition our products ship all across Canada. We will also offer warranty policies.</h3>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		<div class="row">
-			<div class="clearfix visible-sm-block"></div>
-				<div class="col-md-3 col-sm-6 to-animate">
-					<div class="price-box popular">
-						<div class="popular-text">Best value</div>
-						<h2 class="pricing-plan">Starter Kit</h2>
-						<div class="price"><sup class="currency">$</sup>80</div>
-						<p>Basic kit to help start growing spirulina</p>
-						<hr>
-						<ul class="pricing-info">
-							<li>Spiravita</li>
-							<li>Algae Culture</li>
-							<li>Nutrition Mix</li>
-							<li>Cleaning Mix + Test Strips</li>
-							<li>Instruction Manual</li>
-							<li>Recipes Book</li>
-						</ul>
-						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="C6JDZR6XUDSPN">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-						</form>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="price-box to-animate">
-						<h2 class="pricing-plan">Nutrition Mix</h2>
-						<div class="price"><sup class="currency">$</sup>10</div>
-						<p>Nutrition mix to feed your spirulina</p>
-						<hr>
-						<ul class="pricing-info">
-							<li>Nutrition Mix</li>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-						</ul>
-						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="7TAEE2HQZLK3J">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-						</form>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="price-box to-animate">
-						<h2 class="pricing-plan">Cleaning Mix</h2>
-						<div class="price"><sup class="currency">$</sup>10</div>
-						<p>Cleaning mix for Spiravita tank</p>
-						<hr>
-						<ul class="pricing-info">
-							<li>Cleaning Mix</li>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-						</ul>
-						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="B7X69GLCRTGKW">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-						</form>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="price-box to-animate">
-						<h2 class="pricing-plan">Algae Culture</h2>
-						<div class="price"><sup class="currency">$</sup>15</div>
-						<p>Refills on algae culture to grow more spirulina</p>
-						<hr>
-						<ul class="pricing-info">
-							<li>Algae Culture</li>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-						</ul>
-						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="GNY3688XBFGVQ">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-						</form>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6 col-md-push-4">
-					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-					</form>
-				</div>	
-				<div class="col-md-6 col-sm-6">
-					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-					<input type="image" src="https://www.paypal.com/en_AU/AU/i/btn/btn_xpressCheckout.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- Testimonials -->
-	<div id="fh5co-testimonials">		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Testimonials</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Hear what people have to say about our product...</h3>
+				<!-- Item 1 -->
+				<div class="row">
+					<div class="clearfix visible-sm-block"></div>
+						<div class="col-md-3 col-sm-6 to-animate">
+							<div class="price-box popular">
+								<div class="popular-text">Best value</div>
+								<h2 class="pricing-plan">Starter Kit</h2>
+								<div class="price"><sup class="currency">$</sup>80</div>
+								<p>Basic kit to help start growing spirulina</p>
+								<hr>
+								<ul class="pricing-info">
+									<li>Spiravita</li>
+									<li>Algae Culture</li>
+									<li>Nutrition Mix</li>
+									<li>Cleaning Mix + Test Strips</li>
+									<li>Instruction Manual</li>
+									<li>Recipes Book</li>
+								</ul>
+								<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="C6JDZR6XUDSPN">
+									<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" alt="Pay Pal Button">
+								</form>
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="box-testimony to-animate">
-						<blockquote>
-							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
-							<p>&ldquo;I learned about the Spiravita online after doing extensive research to find an effective solution to my family's poor diet. Everyday, I would get back from work late and still have to feed my family dinner. Most days we would just go to a sandwich shop, having no time to get groceries. After discovering and getting the Spiravita, my family has taking spirulina daily, and we have seen very noticeable improvements in many facets of our daily lives. My spouse and I feel younger - more energized - and the young one is certainly no longer showing signs of vitamin deficiency. &rdquo;</p>
-						</blockquote>
-						<p class="author">Michael Morris-Lee<span class="subtext">Halifax, Nova Scotia</span></p>
-					</div>	
-				</div>
-				<div class="col-md-4">
-					<div class="box-testimony to-animate">
-						<blockquote>
-							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
-							<p>&ldquo;Spiravita really gives me the kick I need everyday! I've been using it for a while now, and it allows my entire family to eat healthily. It's nice, easy-to-use and just great overall! There's nothing else like it out there!&rdquo;</p>
-						</blockquote>
-						<p class="author">George Lang<span class="subtext">Vancouver, B.C.</span></p>
-					</div>
-					
-				</div>
-				<div class="col-md-4">
-					<div class="box-testimony to-animate">
-						<blockquote>
-							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
-							<p>&ldquo;Knowing the health benefits of Spirulina, I have been trying to grow it at home by myself for over 2 years. I have realized, however, that the inconvenience and risk of contamination make such an endeavor time consuming and costly. After learning about it from a friend, I obtained a Spiravita kit and started using it. The assurance and convenience it provides make it really worthwhile, I would strongly recommend it.&rdquo;</p>
-						</blockquote>
-						<p class="author">Katherine Peng<span class="subtext">Hamilton, Ontario</span></p>
+						<div class="col-md-3 col-sm-6">
+							<div class="price-box to-animate">
+								<h2 class="pricing-plan">Nutrition Mix</h2>
+								<div class="price"><sup class="currency">$</sup>10</div>
+								<p>Nutrition mix to feed your spirulina</p>
+								<hr>
+								<ul class="pricing-info">
+									<li>Nutrition Mix</li>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+								</ul>
+								<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="7TAEE2HQZLK3J">
+									<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" alt="PayPal Button">
+								</form>
+							</div>
+						</div>
+						<!-- Item 2 -->
+						<div class="col-md-3 col-sm-6">
+							<div class="price-box to-animate">
+								<h2 class="pricing-plan">Cleaning Mix</h2>
+								<div class="price"><sup class="currency">$</sup>10</div>
+								<p>Cleaning mix for Spiravita tank</p>
+								<hr>
+								<ul class="pricing-info">
+									<li>Cleaning Mix</li>
+										<br>
+										<br>
+										<br>
+										<br>
+										<br>
+								</ul>
+								<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="B7X69GLCRTGKW">
+									<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" alt="PayPal Button">
+								</form>
+							</div>
+						</div>
+						<!-- Item 3 -->
+						<div class="col-md-3 col-sm-6">
+							<div class="price-box to-animate">
+								<h2 class="pricing-plan">Algae Culture</h2>
+								<div class="price"><sup class="currency">$</sup>15</div>
+								<p>Refills on algae culture to grow more spirulina</p>
+								<hr>
+								<ul class="pricing-info">
+									<li>Algae Culture</li>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+								</ul>
+								<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="GNY3688XBFGVQ">
+									<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" alt="PayPal Button">
+								</form>
+							</div>
+						</div>
+						<!-- View Cart Button-->
+						<div class="col-md-6 col-sm-6 col-md-push-4">
+							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIG1QYJKoZIhvcNAQcEoIIGxjCCBsICAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAu5bs+/HNMMfLz/Hlh8LZufb+QsXFw/XVJbdZbr4jeF0ZjrgZgaRQSUiWORP7Q6jwJvIzTedHF59beh4bpxwvDUxWUJ/iKOVxdVhe52cMTS6SZdavr8yYf+h3ZIgO3vaq9yfdsiCuShfTb1fMtwvtit/BG7t4i4DTqJmFlRGzaGTELMAkGBSsOAwIaBQAwUwYJKoZIhvcNAQcBMBQGCCqGSIb3DQMHBAgE+1z4po+FvoAwIcybIIWvCdY5u+yaidVxVqcyrSOH2HKuAmQYnr/WP5dMKkr2YUTSm+9VOlJcvopUoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTYwOTA1MjA0NDQ3WjAjBgkqhkiG9w0BCQQxFgQU4SAUlGLw2F01JL+qaw99/QStgfUwDQYJKoZIhvcNAQEBBQAEgYBtV0jYM5fgibXYFPpDA4ZJyuYvsM5qsu/ZttX/657/0629MCbWjqpKrOlDTdmewjOJ+uCw0L/CXRfmZo3MwnDk9cavbw/EqBKPxtV9UIjgAF7fdIGfbmpxIhBL8TkDNtKSytIl1DAxLy22D5nYAyAxSDb4Rgu9pAQUm4mRDSi5sg==-----END PKCS7-----">
+								<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" alt="PayPal View Cart Button">
+							</form>
+						</div>	
+						<!-- Check Out With PayPal -->
+						<div class="col-md-6 col-sm-6">
+							<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+								<input type="image" src="https://www.paypal.com/en_AU/AU/i/btn/btn_xpressCheckout.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" alt"Check Out With PayPal">
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-<!-- Start of Recipes-->
-	<div id="fh5co-press" data-section="recipe">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="single-animate animate-press-1">Recipes</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext single-animate animate-press-2">
-							<h3>Although you may want to incoperate spirulina into your everyday diet, you may not want to consume raw spirulina. Stetix has provided you with some quick, simple and nutrious recipes to some of the most delicious everyday foods.</h3>
+		<!-- End Pricing -->
+
+		<!-- Testimonials -->
+		<div id="fh5co-testimonials">		
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">Testimonials</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext to-animate">
+								<h3>Hear what people have to say about our product...</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="box-testimony to-animate">
+							<blockquote>
+								<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+								<p>&ldquo;I learned about the Spiravita online after doing extensive research to find an effective solution to my family's poor diet. Everyday, I would get back from work late and still have to feed my family dinner. Most days we would just go to a sandwich shop, having no time to get groceries. After discovering and getting the Spiravita, my family has taking spirulina daily, and we have seen very noticeable improvements in many facets of our daily lives. My spouse and I feel younger - more energized - and the young one is certainly no longer showing signs of vitamin deficiency. &rdquo;</p>
+							</blockquote>
+							<p class="author">Michael Morris-Lee<span class="subtext">Halifax, Nova Scotia</span></p>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div class="box-testimony to-animate">
+							<blockquote>
+								<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+								<p>&ldquo;Spiravita really gives me the kick I need everyday! I've been using it for a while now, and it allows my entire family to eat healthily. It's nice, easy-to-use and just great overall! There's nothing else like it out there!&rdquo;</p>
+							</blockquote>
+							<p class="author">George Lang<span class="subtext">Vancouver, B.C.</span></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="box-testimony to-animate">
+							<blockquote>
+								<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+								<p>&ldquo;Knowing the health benefits of Spirulina, I have been trying to grow it at home by myself for over 2 years. I have realized, however, that the inconvenience and risk of contamination make such an endeavor time consuming and costly. After learning about it from a friend, I obtained a Spiravita kit and started using it. The assurance and convenience it provides make it really worthwhile, I would strongly recommend it.&rdquo;</p>
+							</blockquote>
+							<p class="author">Katherine Peng<span class="subtext">Hamilton, Ontario</span></p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="fh5co-press-item to-animate">
-						<div class="fh5co-press-img" style="background-image: url(images/recipe-smoothie.png)">
-						</div>
-						<div class="fh5co-press-text">
-							<h3 class="h2 fh5co-press-title">Spirulina Smoothies<span class="fh5co-border"></span></h3>
-							<p>With just a handful of berries or your choice of fruit, you can mask the spirulina with strong, tasty flavors. This makes it a great and healthy addition to your morning. </p>
-							<p><a href="smoothie.html" class="btn btn-primary btn-sm">Learn more</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="fh5co-press-item to-animate">
-						<div class="fh5co-press-img" style="background-image: url(images/recipe-fishtacos.png)">
-						</div>
-						<div class="fh5co-press-text">
-							<h3 class="h2 fh5co-press-title">Spirulina Fish Tacos<span class="fh5co-border"></span></h3>
-							<p>Love tacos? But hate the feeling of eating unhealthy? Well adding spirulina to your tacos is an easy way to add some nutrition to taco night!</p>
-							<p><a href="fishtacos.html" class="btn btn-primary btn-sm">Learn more</a></p>
+		</div>
+		<!-- Ent Tesimonials -->
+
+		<!-- Recipes-->
+		<div id="fh5co-press" data-section="recipe">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="single-animate animate-press-1">Recipes</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext single-animate animate-press-2">
+								<h3>Although you may want to incoperate spirulina into your everyday diet, you may not want to consume raw spirulina. Stetix has provided you with some quick, simple and nutrious recipes to some of the most delicious everyday foods.</h3>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="fh5co-press-item to-animate">
-						<div class="fh5co-press-img" style="background-image: url(images/recipe-icecream.png);">
-						</div>
-						<div class="fh5co-press-text">
-							<h3 class="h2 fh5co-press-title">Spirulina Ice Cream<span class="fh5co-border"></span></h3>
-							<p>Who loves ice cream? We all love ice cream! Try out spirulina ice cream! This easy recipe will be sure to excite the kids as well as your tastebuds.</p>
-							<p><a href="icecream.html" class="btn btn-primary btn-sm">Learn more</a></p>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="fh5co-press-item to-animate">
+							<div class="fh5co-press-img" style="background-image: url(images/recipe-smoothie.png)">
+							</div>
+							<div class="fh5co-press-text">
+								<h3 class="h2 fh5co-press-title">Spirulina Smoothies<span class="fh5co-border"></span></h3>
+								<p>With just a handful of berries or your choice of fruit, you can mask the spirulina with strong, tasty flavors. This makes it a great and healthy addition to your morning. </p>
+								<p><a href="smoothie.html" class="btn btn-primary btn-sm">Learn more</a></p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6">
+						<div class="col-md-6">
+							<div class="fh5co-press-item to-animate">
+								<div class="fh5co-press-img" style="background-image: url(images/recipe-fishtacos.png)">
+								</div>
+								<div class="fh5co-press-text">
+									<h3 class="h2 fh5co-press-title">Spirulina Fish Tacos<span class="fh5co-border"></span></h3>
+									<p>Love tacos? But hate the feeling of eating unhealthy? Well adding spirulina to your tacos is an easy way to add some nutrition to taco night!</p>
+									<p><a href="fishtacos.html" class="btn btn-primary btn-sm">Learn more</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="fh5co-press-item to-animate">
+								<div class="fh5co-press-img" style="background-image: url(images/recipe-icecream.png);">
+								</div>
+								<div class="fh5co-press-text">
+									<h3 class="h2 fh5co-press-title">Spirulina Ice Cream<span class="fh5co-border"></span></h3>
+									<p>Who loves ice cream? We all love ice cream! Try out spirulina ice cream! This easy recipe will be sure to excite the kids as well as your tastebuds.</p>
+									<p><a href="icecream.html" class="btn btn-primary btn-sm">Learn more</a></p>
+								</div>
+							</div>
+						</div>
+					<div class="col-md-6">
 					<div class="fh5co-press-item to-animate">
 						<div class="fh5co-press-img" style="background-image: url(images/recipe-proteinpowerbites.png);">
 						</div>
-						<div class="fh5co-press-text">
-							<h3 class="h2 fh5co-press-title">Spirulina Protein Bites<span class="fh5co-border"></span></h3>
-							<p>Tired after the gym? Instead of giving up on that dream beach body. Grab some spirulina protein bites and get that energy you need to keep working.</p>
-							<p><a href="proteinbites.html" class="btn btn-primary btn-sm">Learn more</a></p>
+							<div class="fh5co-press-text">
+								<h3 class="h2 fh5co-press-title">Spirulina Protein Bites<span class="fh5co-border"></span></h3>
+								<p>Tired after the gym? Instead of giving up on that dream beach body. Grab some spirulina protein bites and get that energy you need to keep working.</p>
+								<p><a href="proteinbites.html" class="btn btn-primary btn-sm">Learn more</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class ="container">
-			<div class="row row-bottom-padded-sm">
-				<div class="col-md-12 single-animate animate-features-3">
-					<a href="recipes.html" class="btn btn-primary btn-block">View All Recipes</a>
-				</div>
-			</div>
-		</div>
-	</div>
-<!--End Recipes-->
-<!--Javascript-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("#flip1").click(function(){
-        $("#panel1").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-    $("#flip2").click(function(){
-        $("#panel2").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-    $("#flip3").click(function(){
-        $("#panel3").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-    $("#flip4").click(function(){
-        $("#panel4").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-    $("#flip5").click(function(){
-        $("#panel5").slideToggle("slow");
-    });
-});
-$(document).ready(function(){
-    $("#flip6").click(function(){
-        $("#panel6").slideToggle("slow");
-    });
-});
-</script>
-<!--Start of FAQ-->
-	<div id="fh5co-features" data-section="faq">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="single-animate animate-features-1">FAQ</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
-							<h3>The following are frequently asked questions that we get about Spiravita.</h3>
-						</div>
+			<div class ="container">
+				<div class="row row-bottom-padded-sm">
+					<div class="col-md-12 single-animate animate-features-3">
+						<a href="recipes.html" class="btn btn-primary btn-block">View All Recipes</a>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 fh5co-service to-animate">
-					<div id="flip1">Does Stetix ship to anywhere outside of Canada?</div>
-					<div id="panel1">No, unfortunately Stetix only ships to Canada at the moment. However, we are working hard to make our products available all over the world as soon as possible.</div>
-				</div>
-				<div class="col-md-12 fh5co-service to-animate">
-					<div id="flip2">How much algae can you harvest?</div>
-					<div id="panel2">Spiravita can produce around 1 tablespoon every 2-3 days.</div>
-				</div>
-				<div class="col-md-12 fh5co-service to-animate">
-					<div id="flip3">Is growing Spirulina at home safe?</div>
-					<div id="panel3">Spiravita has top of the class safety measures, featuring pH sensors, automatic temperature control and specialized activated carbon filters. Stetix uses food safe materials and nutrients so there's nothing to worry about.</div>
-				</div>
-				<div class="col-md-12 fh5co-service to-animate">
-					<div id="flip4">What if I go on vacation and can't harvest my spirulina?</div>
-					<div id="panel4">Just turn down the heat! By turning down heating strip in the tank, it'll drastically slow down spirulina growth while still keeping the culture alive so you can go back to growing it when you come back.</div>
-				</div>
-				<div class="col-md-12 fh5co-service to-animate">
-					<div id="flip5">How long does it take the algae to fully mature?</div>
-					<div id="panel5">It take approximately 3 weeks for the spirulina to mature under perfect condition.</div>
-				</div>
-				<div class="col-md-12 fh5co-service to-animate">
-					<div id="flip6">How often do you need to add nutrition mix to your tank?</div>
-					<div id="panel6">Every 6 months, you should add new nutrition mix to your tank, make sure you don't forget. </div>
-				</div>
+		</div>
+		<!--End Recipes-->
+		<!--Javascript For Recipes-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+   			 $("#flip1").click(function(){
+       			 $("#panel1").slideToggle("slow");
+    		});
+		});
+		$(document).ready(function(){
+    		$("#flip2").click(function(){
+        		$("#panel2").slideToggle("slow");
+   			 });
+		});
+		$(document).ready(function(){
+   			$("#flip3").click(function(){
+      	  		$("#panel3").slideToggle("slow");
+   			});
+		});
+		$(document).ready(function(){
+    		$("#flip4").click(function(){
+       			$("#panel4").slideToggle("slow");
+    		});
+		});
+		$(document).ready(function(){
+    		$("#flip5").click(function(){
+        		$("#panel5").slideToggle("slow");
+    		});
+		});
+		$(document).ready(function(){
+    		$("#flip6").click(function(){
+        		$("#panel6").slideToggle("slow");
+    		});
+		});
+		</script>
+		<!-- End js for Recipes -->
 
-			</div>
-		</div>
-	</div>
-<!--End of FAQ-->
-<!--Contact Us-->
-<div id="fh5co-press" data-section="contactus">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="single-animate animate-press-1">Get in Touch</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					<div class="fh5co-press-contact to-animate" style = "min-height:530px;">
-						<div class="fh5co-press-text">
-							<h3 class="h2 fh5co-press-title">Location<span class="fh5co-border"></span></h3>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.656484804538!2d-79.57703548450084!3d43.69690447911984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a1d08d0c5c1%3A0x1190611a0f42f57d!2s1040+Martin+Grove+Rd%2C+Etobicoke%2C+ON+M9W+4W1!5e0!3m2!1sen!2sca!4v1473109668788" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<!--Start of FAQ-->
+		<div id="fh5co-features" data-section="faq">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="single-animate animate-features-1">FAQ</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
+								<h3>The following are frequently asked questions that we get about Spiravita.</h3>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class ="col-md-4">
-					<div class="fh5co-press-contact to-animate" style = "min-height:530px;">
-						<div class="fh5co-press-text">
-							<h3 class="h2 fh5co-press-title">Location Information<span class="fh5co-border"></span></h3>
-							<p style = "font-weight: bold;">Stetix Location:</p>
-							<p>1040 Martin Grove Road. Etobicoke, ON </p>
-							<p style = "font-weight: bold">Postal Code:</p>
-							<p>M9W 4W1 </p>
-							<p style = "font-weight: bold;">Opening Hours: </p>
-							<p>Weekdays - 9am-5pm <br>
-								Weekends - Closed
-							</p>	
+				<div class="row">
+					<div class="col-md-12 fh5co-service to-animate">
+						<div id="flip1">Does Stetix ship to anywhere outside of Canada?</div>
+						<div id="panel1">No, unfortunately Stetix only ships to Canada at the moment. However, we are working hard to make our products available all over the world as soon as possible.</div>
+					</div>
+					<div class="col-md-12 fh5co-service to-animate">
+						<div id="flip2">How much algae can you harvest?</div>
+						<div id="panel2">Spiravita can produce around 1 tablespoon every 2-3 days.</div>
+					</div>
+					<div class="col-md-12 fh5co-service to-animate">
+						<div id="flip3">Is growing Spirulina at home safe?</div>
+						<div id="panel3">Spiravita has top of the class safety measures, featuring pH sensors, automatic temperature control and specialized activated carbon filters. Stetix uses food safe materials and nutrients so there's nothing to worry about.</div>
+					</div>
+					<div class="col-md-12 fh5co-service to-animate">
+						<div id="flip4">What if I go on vacation and can't harvest my spirulina?</div>
+						<div id="panel4">Just turn down the heat! By turning down heating strip in the tank, it'll drastically slow down spirulina growth while still keeping the culture alive so you can go back to growing it when you come back.</div>
+					</div>
+					<div class="col-md-12 fh5co-service to-animate">
+						<div id="flip5">How long does it take the algae to fully mature?</div>
+						<div id="panel5">It take approximately 3 weeks for the spirulina to mature under perfect condition.</div>
+					</div>
+					<div class="col-md-12 fh5co-service to-animate">
+						<div id="flip6">How often do you need to add nutrition mix to your tank?</div>
+						<div id="panel6">Every 6 months, you should add new nutrition mix to your tank, make sure you don't forget. </div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<!--End of FAQ-->
+
+		<!--Contact Us-->
+		<div id="fh5co-press" data-section="contactus">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="single-animate animate-press-1">Get in Touch</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<div class="fh5co-press-contact to-animate" style = "min-height:530px;">
+							<div class="fh5co-press-text">
+								<h3 class="h2 fh5co-press-title">Location<span class="fh5co-border"></span></h3>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.656484804538!2d-79.57703548450084!3d43.69690447911984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a1d08d0c5c1%3A0x1190611a0f42f57d!2s1040+Martin+Grove+Rd%2C+Etobicoke%2C+ON+M9W+4W1!5e0!3m2!1sen!2sca!4v1473109668788" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
 						</div>
+					</div>
+					<div class ="col-md-4">
+						<div class="fh5co-press-contact to-animate" style = "min-height:530px;">
+							<div class="fh5co-press-text">
+								<h3 class="h2 fh5co-press-title">Location Information<span class="fh5co-border"></span></h3>
+								<p style = "font-weight: bold;">Stetix Location:</p>
+								<p>1040 Martin Grove Road. Etobicoke, ON </p>
+								<p style = "font-weight: bold">Postal Code:</p>
+								<p>M9W 4W1 </p>
+								<p style = "font-weight: bold;">Opening Hours: </p>
+								<p>Weekdays - 9am-5pm <br>
+								Weekends - Closed
+								</p>	
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class = "row">
+					<div class="col-md-8">
+						<div class="fh5co-press-contact to-animate" style = "min-height:500px;">
+							<div class="fh5co-press-text">
+								<script type="text/javascript">var servicedomain="www.123contactform.com"; var frmRef=''; try { frmRef=window.top.location.href; } catch(err) {}; var cfJsHost = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E")); frmRef=encodeURIComponent(frmRef.replace(/(<([^>]+)>)/ig,'')).replace('%26','[%ANDCHAR%]'); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/jsform-2180265.js?ref="+frmRef+"' type='text/javascript'%3E%3C/script%3E")); 
+								</script>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="fh5co-press-contact to-animate" style = "min-height:500px;">
+							<div class="fh5co-press-text">
+								<h3 class="h2 fh5co-press-title">Contact Information<span class="fh5co-border"></span></h3>
+								<ul class="contact" style="list-style: none;">
+									<li><i class="icon-phone"></i> (587) 968-4863</li>
+									<li><i class="icon-mail2"></i> stetixcanada@gmail.com</li>			
+									<li><a href="https://twitter.com/stetixcanada"><i class="icon-twitter"> twitter.com/stetixcanada</i></a></li>
+									<li><a href="https://www.facebook.com/stetixcanada/"><i class="icon-facebook"> facebook.com/stetixcanada/</i></a></li>
+									<li><a href="https://www.instagram.com/stetixcanada/"><i class="icon-instagram"> instagram.com/stetixcanada/</i></a></li>
+									<li><a href="https://www.pinterest.com/stetixcanada/"><i class="icon-pinterest"> pinterest.com/stetixcanada/</i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Contact Us-->
+	
+		<!--Footer-->
+		<footer id="footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-bottom-padded-sm">
+					<div class="col-md-12">
+						<p class="copyright text-center">&copy;2016 <a href="index.html">Stetix</a>. All Rights Reserved.</p>
 					</div>
 				</div>	
-			</div>
-			<div class = "row">
-				<div class="col-md-8">
-					<div class="fh5co-press-contact to-animate" style = "min-height:500px;">
-						<div class="fh5co-press-text">
-							<!-- www.123contactform.com script begins here -->
-							<script type="text/javascript">var servicedomain="www.123contactform.com"; var frmRef=''; try { frmRef=window.top.location.href; } catch(err) {}; var cfJsHost = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E")); frmRef=encodeURIComponent(frmRef.replace(/(<([^>]+)>)/ig,'')).replace('%26','[%ANDCHAR%]'); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/jsform-2180265.js?ref="+frmRef+"' type='text/javascript'%3E%3C/script%3E")); 
-							</script>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-press-contact to-animate" style = "min-height:500px;">
-						<div class="fh5co-press-text">
-							<h3 class="h2 fh5co-press-title">Contact Information<span class="fh5co-border"></span></h3>
-							<ul class="contact" style="list-style: none;">
-								<li><i class="icon-phone"></i> (587) 968-4863</li>
-								<li><i class="icon-mail2"></i> stetixcanada@gmail.com</li>			
-								<li><a href="https://twitter.com/stetixcanada"><i class="icon-twitter"> twitter.com/stetixcanada</i></a></li>
-								<li><a href="https://www.facebook.com/stetixcanada/"><i class="icon-facebook"> facebook.com/stetixcanada/</i></a></li>
-								<li><a href="https://www.instagram.com/stetixcanada/"><i class="icon-instagram"> instagram.com/stetixcanada/</i></a></li>
-								<li><a href="https://www.pinterest.com/stetixcanada/"><i class="icon-pinterest"> pinterest.com/stetixcanada/</i></a></li>
-
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<!--End Contact Us-->
-	
-<!--Footer-->
-	<footer id="footer" role="contentinfo">
-		<div class="container">
-			<div class="row row-bottom-padded-sm">
-				<div class="col-md-12">
-					<p class="copyright text-center">&copy;2016 <a href="index.html">Stetix</a>. All Rights Reserved.</p>
-				</div>
-			</div>	
 				<div class="row">
-				<div class="col-md-12 text-center">
-					<ul class="social social-circle">
-						<li><a href="https://twitter.com/stetixcanada" target="_blank"><i class="icon-twitter"></i></a></li>
-						<li><a href="https://www.facebook.com/stetixcanada/" target="_blank"><i class="icon-facebook"></i></a></li>
-						<li><a href="https://www.instagram.com/stetixcanada/" target="_blank"><i class="icon-instagram"></i></a></li>
-						<li><a href="https://www.pinterest.com/stetixcanada/" target="_blank"><i class="icon-pinterest"></i></a></li>
-					</ul>
+					<div class="col-md-12 text-center">
+						<ul class="social social-circle">
+							<li><a href="https://twitter.com/stetixcanada" target="_blank"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/stetixcanada/" target="_blank"><i class="icon-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/stetixcanada/" target="_blank"><i class="icon-instagram"></i></a></li>
+							<li><a href="https://www.pinterest.com/stetixcanada/" target="_blank"><i class="icon-pinterest"></i></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
+		<!-- End Footer -->
 	
-	<!-- For demo purposes Only ( You may delete this anytime :-) -->
-	<div id="colour-variations">
-		<a class="option-toggle"><i class="icon-gear"></i></a>
-		<h3>Translate / Traduire</h3>
-		<ul>
-			<div id="google_translate_element"></div><script type="text/javascript">
-			function googleTranslateElementInit() {
-  			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-			}
-			</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-		</ul>
-	</div>
-	<!-- End demo purposes only -->
+		<!-- For Translate PopUp-->
+		<div id="colour-variations">
+			<a class="option-toggle"><i class="icon-gear"></i></a>
+			<h3>Translate / Traduire</h3>
+			<ul>
+				<div id="google_translate_element">
+				</div>
+				<script type="text/javascript">
+					function googleTranslateElementInit() {
+  						new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+					}
+				</script>
+				<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+				</script>
+			</ul>
+		</div>
+		<!-- End for Translate -->
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Owl Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Owl Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- For Translate) -->
+		<script src="js/jquery.style.switcher.js"></script>
+		<script>
+			$(function(){
+				$('#colour-variations ul').styleSwitcher({
+					defaultThemeId: 'theme-switch',
+					hasPreview: false,
+					cookie: {
+	  	        		expires: 30,
+	  	        		isManagingLoad: true
+	  	    		}
+				});	
+				$('.option-toggle').click(function() {
+					$('#colour-variations').toggleClass('sleep');
+				});
+			});
+		</script>
+		<!-- End For Translate-->
 
 
-	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
-	<script src="js/jquery.style.switcher.js"></script>
-	<script>
-	$(function(){
-		$('#colour-variations ul').styleSwitcher({
-			defaultThemeId: 'theme-switch',
-			hasPreview: false,
-			cookie: {
-	          	expires: 30,
-	          	isManagingLoad: true
-	      	}
-		});	
-		$('.option-toggle').click(function() {
-			$('#colour-variations').toggleClass('sleep');
-		});
-	});
-	</script>
-	<!-- End demo purposes only -->
-
-
-	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+		<!-- Main JS (Do not remove) -->
+		<script src="js/main.js"></script>
 
 	</body>
 </html>
