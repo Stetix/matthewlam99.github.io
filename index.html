@@ -267,6 +267,41 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class ="col-md-12" style = "padding-bottom:50px">
+					<div style="text-align:center">
+					  <button class = "btn btn-primary" onclick="playPause()">Play/Pause</button>
+					  <button class = "btn btn-primary" onclick="makeBig()">Big</button>
+					  <button class = "btn btn-primary" onclick="makeSmall()">Small</button>
+					  <button class = "btn btn-primary" onclick="makeNormal()">Normal</button>
+					  <br><br>
+					  <video id="video1" width="600">
+						    <source src="video.mp4" type="video/mp4">
+						    <source src="video.ogg" type="video/ogg">
+						    Your browser does not support HTML5 video.
+					  </video>
+					</div>
+					<!--JS for videoplayer-->
+					<script>
+					var myVideo = document.getElementById("video1");
+
+					function playPause() {
+					    if (myVideo.paused)
+					        myVideo.play();
+					    else
+					        myVideo.pause();
+					}
+					function makeBig() {
+					    myVideo.width = 900;
+					}
+					function makeSmall() {
+					    myVideo.width = 300;
+					}
+					function makeNormal() {
+					    myVideo.width = 600;
+					}
+					</script>
+				</div>
+			<div class="row">
 				<div class="col-md-4">
 					<div class="box to-animate" style ="min-height:450px">
 						<div class="icon colored-1"><span><i class="icon-mustache"></i></span></div>
