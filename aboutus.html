@@ -28,7 +28,7 @@
 		<script src="js/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
-<!--Navigation Bar-->
+		<!--Navigation Bar-->
 		<header role="banner" id="fh5co-header">
 			<div class="container">
 			    <nav class="navbar navbar-default">
@@ -177,6 +177,22 @@
    				});
 			});
 		</script>
+		<script src="js/jquery.style.switcher.js"></script>
+		<script>
+			$(function(){
+				$('#colour-variations ul').styleSwitcher({
+					defaultThemeId: 'theme-switch',
+					hasPreview: false,
+					cookie: {
+	          		expires: 30,
+	          		isManagingLoad: true
+	      			}
+				});	
+				$('.option-toggle').click(function() {
+					$('#colour-variations').toggleClass('sleep');
+				});
+			});
+		</script>
 		
 		<!-- Page Banner-->		
 		<div class ="page-banner">			
@@ -309,23 +325,7 @@
 		<script src="js/jquery.waypoints.min.js"></script>
 		<!-- Owl Carousel -->
 		<script src="js/owl.carousel.min.js"></script>
-
-		<script src="js/jquery.style.switcher.js"></script>
-		<script>
-			$(function(){
-				$('#colour-variations ul').styleSwitcher({
-					defaultThemeId: 'theme-switch',
-					hasPreview: false,
-					cookie: {
-	          		expires: 30,
-	          		isManagingLoad: true
-	      			}
-				});	
-				$('.option-toggle').click(function() {
-					$('#colour-variations').toggleClass('sleep');
-				});
-			});
-		</script>
+		
 		<script src="js/main.js"></script>
 
 	</body>
