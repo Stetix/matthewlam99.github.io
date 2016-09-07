@@ -191,11 +191,7 @@
 						    	<div class="fh5co-owl-text">
 		    						<h1 class="fh5co-lead to-animate"></h1>
 									<h2 class="fh5co-sub-lead to-animate"></a></h3>
-									<p class="to-animate-2"><a href="#" data-nav-section="pricing" target="_blank" class="btn btn-primary btn-lg">Order more now</a></p>
-									<video width="100%">
-  									<source src="video.mp4" type="video/mp4">
-  <!--<source src="movie.ogg" type="video/ogg"> -->
-									</video>
+									
 								</div>
 							</div>
 		    			</div>
@@ -260,13 +256,48 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
 					<h2 class="to-animate">Why Spiravita?</h2>
 				</div>
 			</div>
+			<!--JS for video-->
+			<script>
+				var myVideo = document.getElementById("video1");
+				function playPause() {
+				    if (myVideo.paused)
+				        myVideo.play();
+				    else
+				        myVideo.pause();
+				}
+				function makeBig() {
+				    myVideo.width = 900;
+				}
+				function makeSmall() {
+				    myVideo.width = 300;
+				}
+				function makeNormal() {
+				    myVideo.width = 600;
+				}
+			</script>
+			<!--End JS for Video-->
 			<div class="row">
+				<div class = "col-md-12" style = "padding-bottom:40px">
+					<div style="text-align:center">
+					  <button class = "btn btn-primary" onclick="playPause()">Play/Pause</button>
+					  <button class = "btn btn-primary" onclick="makeBig()">Big</button>
+					  <button class = "btn btn-primary" onclick="makeSmall()">Small</button>
+					  <button class = "btn btn-primary" onclick="makeNormal()">Normal</button>
+					  <br><br>
+					  <video id="video1" width="600">
+						    <source src="video.mp4" type="video/mp4">
+						    <source src="video.ogg" type="video/ogg">
+						    Your browser does not support HTML5 video.
+					  </video>
+				    </div>								
+				</div>
 				<div class="col-md-4">
 					<div class="box to-animate" style ="min-height:450px">
 						<div class="icon colored-1"><span><i class="icon-mustache"></i></span></div>
