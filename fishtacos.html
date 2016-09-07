@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+ <html class="no-js"> 
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,11 +59,11 @@
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
 		            <li><a href="index.html" data-nav-section="home"><span>Home</span></a></li>
-		            <li><a href="about.html" data-nav-section="about"><span>About</span></a></li>
-		            <li><a href="services.html" data-nav-section="services"><span>Services</span></a></li>
-		            <li><a href="features.html" data-nav-section="features"><span>Features</span></a></li>
-		            <li><a href="testimonials.html" data-nav-section="testimonials"><span>Testimonials</span></a></li>
-		            <li><a href="pricing.html"><span>Pricing</span></a></li>
+		            <li><a href="index.html" data-nav-section="about"><span>About</span></a></li>
+		            <li><a href="index.html" data-nav-section="services"><span>Services</span></a></li>
+		            <li><a href="index.html" data-nav-section="features"><span>Features</span></a></li>
+		            <li><a href="index.html" data-nav-section="testimonials"><span>Testimonials</span></a></li>
+		            <li><a href="index.html"><span>Pricing</span></a></li>
 		            <li class="active"><a href="recipes.html" ><span>Recipes</span></a></li>
 		          </ul>
 		        </div>
@@ -75,91 +72,144 @@
 		  </div>
 	</header>
 
-	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
-	<link rel="stylesheet" id="theme-switch" href="css/style.css">
-	<!-- End demo purposes only -->
+		<!-- Translate-->
+		<link rel="stylesheet" id="theme-switch" href="css/style.css">
+		<style>
+			#colour-variations {
+				padding: 10px;
+				-webkit-transition: 0.5s;
+	  			-o-transition: 0.5s;
+	  			transition: 0.5s;
+				width: 200px;
+				position: fixed;
+				left: 0;
+				top: 100px;
+				z-index: 999999;
+				background: #fff;
+				/*border-radius: 4px;*/
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+			}
+			#colour-variations.sleep {
+				margin-left: -200px;
+			}
+			#colour-variations h3 {
+				text-align: center;;
+				font-size: 11px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				color: #777;
+				margin: 0 0 10px 0;
+				padding: 0;;
+			}
+			#colour-variations ul,
+			#colour-variations ul li {
+				padding: 0;
+				margin: 0;
+			}
+			#colour-variations li {
+				list-style: none;
+				display: inline;
+			}
+			#colour-variations li a {
+				width: 20px;
+				height: 20px;
+				position: relative;
+				float: left;
+				margin: 5px;
+			}
+			.option-toggle {
+				position: absolute;
+				right: 0;
+				top: 0;
+				margin-top: 5px;
+				margin-right: -30px;
+				width: 30px;
+				height: 30px;
+				background: #99E368;
+				text-align: center;
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				color: #fff;
+				cursor: pointer;
+				-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+				box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+			}
+			.option-toggle i {
+				top: 2px;
+				position: relative;
+			}
+			.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+				color:  #fff;
+				text-decoration: none;
+				outline: none;
+			}
+		</style>
 
-	<style>
-	/* For demo purpose only */
-	
-	/* For Demo Purposes Only ( You can delete this anytime :-) */
-	#colour-variations {
-		padding: 10px;
-		-webkit-transition: 0.5s;
-	  	-o-transition: 0.5s;
-	  	transition: 0.5s;
-		width: 200px;
-		position: fixed;
-		left: 0;
-		top: 100px;
-		z-index: 999999;
-		background: #fff;
-		/*border-radius: 4px;*/
-		border-top-right-radius: 4px;
-		border-bottom-right-radius: 4px;
-		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	}
-	#colour-variations.sleep {
-		margin-left: -200px;
-	}
-	#colour-variations h3 {
-		text-align: center;;
-		font-size: 11px;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		color: #777;
-		margin: 0 0 10px 0;
-		padding: 0;;
-	}
-	#colour-variations ul,
-	#colour-variations ul li {
-		padding: 0;
-		margin: 0;
-	}
-	#colour-variations li {
-		list-style: none;
-		display: inline;
-	}
-	#colour-variations li a {
-		width: 20px;
-		height: 20px;
-		position: relative;
-		float: left;
-		margin: 5px;
-	}
+		<div id="colour-variations">
+			<a class="option-toggle"><i class="icon-gear"></i></a>
+			<h3>Translate / Traduire</h3>
+			<ul>
+				<div id="google_translate_element"></div>
+				<script type="text/javascript">
+					function googleTranslateElementInit() {
+  						new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+					}
+				</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+			</ul>
+		</div>
 
-	.option-toggle {
-		position: absolute;
-		right: 0;
-		top: 0;
-		margin-top: 5px;
-		margin-right: -30px;
-		width: 30px;
-		height: 30px;
-		background: #99E368;
-		text-align: center;
-		border-top-right-radius: 4px;
-		border-bottom-right-radius: 4px;
-		color: #fff;
-		cursor: pointer;
-		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	}
-	.option-toggle i {
-		top: 2px;
-		position: relative;
-	}
-	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
-		color:  #fff;
-		text-decoration: none;
-		outline: none;
-	}
-	</style>
+		<!--Javascript for translate-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+   			 	$("#flip1").click(function(){
+       				 $("#panel1").slideToggle("slow");
+   				});
+			});
+			$(document).ready(function(){
+    			$("#flip2").click(function(){
+        			$("#panel2").slideToggle("slow");
+    			});
+			});
+			$(document).ready(function(){
+    			$("#flip3").click(function(){
+        			$("#panel3").slideToggle("slow");
+    			});
+			});
+			$(document).ready(function(){
+   				$("#flip4").click(function(){
+       				 $("#panel4").slideToggle("slow");
+   				});
+			});
+			$(document).ready(function(){
+    			$("#flip5").click(function(){
+        			$("#panel5").slideToggle("slow");
+   				});
+			});
+		</script>
+		<script src="js/jquery.style.switcher.js"></script>
+		<script>
+			$(function(){
+				$('#colour-variations ul').styleSwitcher({
+					defaultThemeId: 'theme-switch',
+					hasPreview: false,
+					cookie: {
+	          		expires: 30,
+	          		isManagingLoad: true
+	      			}
+				});	
+				$('.option-toggle').click(function() {
+					$('#colour-variations').toggleClass('sleep');
+				});
+			});
+		</script>
 
 	<div class = "page-banner">
 	<img src="images/spirulina-nutrition.jpg" class="img-responsive img-rounded" style = "width:100%; ">
@@ -176,7 +226,7 @@
 					</div>
 					<div class="fh5co-press to-animate">
 				 		<div class="fh5co-press-img">
-							<img src = "images/recipe-fishtacos.png" style = "width:70%">
+							<img src = "images/recipe-fishtacos.png" style = "width:70%" alt= "Tacos">
 						</div>
 					</div>
 				</div>
@@ -236,20 +286,20 @@
 				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate action action-primary action-default" >
 					<div class="fh5co-desc">
 						<h3>Spirulina Ice Cream</h3>
-						<a href ="icecream.html"><img src="images/recipe-icecream.png"></a>
+						<a href ="icecream.html"><img src="images/recipe-icecream.png" alt="icecream"></a>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate action action-primary action-default">
 					<div class="fh5co-desc">
 						<h3>Spirulina Smoothies</h3>
-						<a href ="smoothie.html"><img src="images/recipe-smoothie.png"></a>
+						<a href ="smoothie.html"><img src="images/recipe-smoothie.png" alt="Smoothies"></a>
 					</div>	
 				</div>
 				<div class="clearfix visible-sm-block visible-xs-block"></div>
 				<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate action action-primary action-default">
 					<div class="fh5co-desc">
 						<h3>Spirulina Protein Bites</h3>
-						<a href ="proteinbites.html"><img src="images/recipe-proteinpowerbites.png"></a>
+						<a href ="proteinbites.html"><img src="images/recipe-proteinpowerbites.png" alt="Protein Bites"></a>
 					</div>
 				</div>
 			</div>
@@ -281,39 +331,6 @@
 		</div>
 
 	</footer>
-	
-	<!-- For demo purposes Only ( You may delete this anytime :-) -->
-	<div id="colour-variations">
-		<a class="option-toggle"><i class="icon-gear"></i></a>
-		<h3>Translate / Traduire</h3>
-		<ul>
-			<div id="google_translate_element"></div><script type="text/javascript">
-			function googleTranslateElementInit() {
-  			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-			}
-			</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-		</ul>
-	</div>
-	<!-- End demo purposes only -->
-	
-		<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
-	<script src="js/jquery.style.switcher.js"></script>
-	<script>
-	$(function(){
-		$('#colour-variations ul').styleSwitcher({
-			defaultThemeId: 'theme-switch',
-			hasPreview: false,
-			cookie: {
-	          	expires: 30,
-	          	isManagingLoad: true
-	      	}
-		});	
-		$('.option-toggle').click(function() {
-			$('#colour-variations').toggleClass('sleep');
-		});
-	});
-	</script>
-	<!-- End demo purposes only -->
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
