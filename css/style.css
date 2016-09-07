@@ -429,10 +429,9 @@ form {
   border-radius: 5px;
   margin-bottom: 40px;
   position: relative;
-  min-height: 500px;
 }
 #fh5co-pricing .price-box.popular {
-  border: 2px solid #99E368;
+  border: 2px solid #6173f4;
 }
 #fh5co-pricing .price-box.popular .popular-text {
   top: 0;
@@ -441,7 +440,7 @@ form {
   margin-top: -2em;
   position: absolute;
   padding: 4px 20px;
-  background: #99E368;
+  background: #6173f4;
   color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -455,7 +454,7 @@ form {
   left: 50%;
   margin-left: -10px;
   border-top: 10px solid black;
-  border-top-color: #99E368;
+  border-top-color: #6173f4;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
